@@ -1,7 +1,7 @@
 # Apache Kafka Course
 Some tutorials written while taking a [course](https://www.udemy.com/course/apache-kafka/) on Apache Kafka
 
-## Tutorial 01 - Basic Producer
+## :one: Tutorial 01 - Basic Producer
 Simple producer that send data to a topic.
 
 **Requirements**
@@ -14,7 +14,7 @@ kafka-topics --bootstrap-server localhost:9092 --topic test-t01 --partitions 3 -
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test-t01
 ```
 
-## Tutorial 02 - Producer with a callback
+## :two: Tutorial 02 - Producer with a callback
 Producer that send data to a topic, and execute a callback after.
 
 **Requirements**
@@ -27,7 +27,7 @@ kafka-topics --bootstrap-server localhost:9092 --topic test-t02 --partitions 3 -
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test-t02
 ```
 
-## Tutorial 03 - Producer with key
+## :three: Tutorial 03 - Producer with key
 Producer that send data with a key to a topic.
 
 **Requirements**
