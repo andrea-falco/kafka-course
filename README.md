@@ -48,6 +48,8 @@ Consumer that read data from topics created in the previous tutorials.
 ```
 tk.andreafalco.kafka.tutorial04.Consumer
 ```
+> It is possible to start multiple instances of the Consumer class to see in the logs how partitions are reassigned to various consumers within the same group.
+
 - Produce data with a producer from the previous tutorials:
 ```
 tk.andreafalco.kafka.tutorial01.Producer
