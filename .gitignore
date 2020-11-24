@@ -1,0 +1,6 @@
+# IntelliJ IDEA
+.idea/
+kafka-course.iml
+
+# Compiled class file
+target/
