@@ -39,3 +39,18 @@ kafka-topics --bootstrap-server localhost:9092 --topic test-t03 --partitions 3 -
 ```
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test-t03 --property print.key=true
 ```
+
+## Tutorial :four: - Basic Consumer
+Consumer that read data from topics created in the previous tutorials.
+
+**Requirements**
+- Run Consumer from the class:
+```
+tk.andreafalco.kafka.tutorial04.Consumer
+```
+- Produce data with a producer from the previous tutorials:
+```
+tk.andreafalco.kafka.tutorial01.Producer
+tk.andreafalco.kafka.tutorial02.ProducerWithCallback
+tk.andreafalco.kafka.tutorial03.ProducerWithKey
+```
