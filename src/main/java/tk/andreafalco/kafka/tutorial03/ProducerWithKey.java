@@ -14,8 +14,6 @@ public class ProducerWithKey {
 
     private static final Logger log = LoggerFactory.getLogger(ProducerWithKey.class);
 
-    private static final String TOPIC = "test-t03";
-
     public static void main(String[] args) {
 
         /*
@@ -43,7 +41,7 @@ public class ProducerWithKey {
         // Create a producer record
         String keyToSend = "Key";
         String valueToSend = "Data";
-        final ProducerRecord<String, String> record = new ProducerRecord<>(TOPIC, keyToSend, valueToSend);
+        final ProducerRecord<String, String> record = new ProducerRecord<>(Constants.TOPIC_T03, keyToSend, valueToSend);
 
         // Send data and set callback
         producer.send(record, (recordMetadata, e) -> {

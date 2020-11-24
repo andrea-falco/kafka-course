@@ -8,8 +8,6 @@ import java.util.Properties;
 
 public class Producer {
 
-    private static final String TOPIC = "test-t01";
-
     public static void main(String[] args) {
 
         /*
@@ -34,7 +32,7 @@ public class Producer {
 
         // Create a producer record
         String valueToSend = "Data";
-        ProducerRecord<String, String> record = new ProducerRecord<>(TOPIC, valueToSend);
+        ProducerRecord<String, String> record = new ProducerRecord<>(Constants.TOPIC_T01, valueToSend);
 
         // Send data
         producer.send(record);
